@@ -49,7 +49,7 @@ extra:
         - type: globe
           link: https://debugtalk.com
         - type: 'github'
-          link: 'https://github.com/httprunner'
+          link: 'https://github.com/httprunner_x'
 
 # index pages
 nav:

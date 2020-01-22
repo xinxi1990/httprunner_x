@@ -135,6 +135,16 @@ $ poetry run python -m httprunner -h
 $ pipenv run python -m httprunner.ext.locusts -h
 ```
 
+打包
+```bash
+$ poetry build
+```
+
+安装
+```bash
+$ sudo pip3 install httprunner_x-1.0.0-py2.py3-none-any.whl
+```
+
 ## Docker
 
 TODO

@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "httprunner"
-version = "2.5.4"
+name = "httprunner_x"
+version = "1.0.0"
 description = "One-stop solution for HTTP(S) testing."
 license = "Apache-2.0"
 readme = "README.md"
-authors = ["debugtalk <debugtalk@gmail.com>"]
+authors = ["xinxi <xinxi1990@.com>"]
 
 homepage = "https://github.com/httprunner/httprunner"
 repository = "https://github.com/httprunner/httprunner"
@@ -50,10 +50,10 @@ flask = "<1.0.0"
 coverage = "^4.5.4"
 
 [tool.poetry.scripts]
-hrun = "httprunner.cli:main"
-ate = "httprunner.cli:main"
-httprunner = "httprunner.cli:main"
-locusts = "httprunner.ext.locusts.cli:main"
+hrun_x = "httprunner_x.cli:main"
+ate_x = "httprunner_x.cli:main"
+httprunner_x = "httprunner_x.cli:main"
+locusts_x = "httprunner_x.ext.locusts.cli:main"
 
 [build-system]
 requires = ["poetry>=1.0.0"]

@@ -1,6 +1,6 @@
 import unittest
 
-from httprunner import validator
+from httprunner_x import validator
 
 
 class TestValidator(unittest.TestCase):

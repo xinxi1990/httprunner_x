@@ -2,8 +2,8 @@
 import os
 import unittest
 
-from httprunner import exceptions, loader
-from httprunner.loader import buildup
+from httprunner_x import exceptions, loader
+from httprunner_x.loader import buildup
 
 
 class TestModuleLoader(unittest.TestCase):
@@ -14,7 +14,7 @@ class TestModuleLoader(unittest.TestCase):
         self.assertNotIn("is_py3", module_functions)
 
     def test_load_debugtalk_module(self):
-        project_mapping = buildup.load_project_data(os.path.join(os.getcwd(), "httprunner"))
+        project_mapping = buildup.load_project_data(os.path.join(os.getcwd(), "httprunner_x"))
         self.assertNotIn("alter_response", project_mapping["functions"])
 
         project_mapping = buildup.load_project_data(os.path.join(os.getcwd(), "tests"))
@@ -43,7 +43,7 @@ class TestModuleLoader(unittest.TestCase):
         )
         self.assertIn("gen_md5", debugtalk_functions)
 
-        project_mapping = buildup.load_project_data("httprunner/__init__.py")
+        project_mapping = buildup.load_project_data("httprunner_x/__init__.py")
         project_working_directory = project_mapping["PWD"]
         debugtalk_functions = project_mapping["functions"]
         self.assertEqual(

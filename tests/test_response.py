@@ -1,7 +1,7 @@
 import requests
 
-from httprunner import exceptions, response
-from httprunner.compat import basestring, bytes
+from httprunner_x import exceptions, response
+from httprunner_x.compat import basestring, bytes
 from tests.api_server import HTTPBIN_SERVER
 from tests.base import ApiServerUnittest
 

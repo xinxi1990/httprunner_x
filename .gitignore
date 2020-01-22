@@ -17,3 +17,4 @@ reports
 .venv
 *.xml
 htmlcov/
+test_report/*

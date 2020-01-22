@@ -1,6 +1,6 @@
 import unittest
 
-from httprunner.loader import check
+from httprunner_x.loader import check
 
 
 class TestLoaderCheck(unittest.TestCase):
@@ -33,7 +33,7 @@ class TestLoaderCheck(unittest.TestCase):
                             'validate': [],
                             'request': {
                                 "method": "GET",
-                                "url": "https://docs.httprunner.org"
+                                "url": "https://docs.httprunner_x.org"
                             }
                         },
                         # test_dict2   # another test dict
