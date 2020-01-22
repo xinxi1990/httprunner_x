@@ -1,0 +1,21 @@
+- config:
+    name: testcase description
+    variables: {}
+
+
+- test:
+    name: ping_1
+    request:
+        method: GET
+        url: http://127.0.0.1:5000/ping
+    validate:
+        - eq: [status_code, 200]
+
+
+- test:
+    name: ping_2
+    request:
+        method: GET
+        url: http://127.0.0.1:5000/ping
+    validate:
+        - eq: [status_code, 200]
